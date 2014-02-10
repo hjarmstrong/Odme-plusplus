@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "odme++", "odme++\odme++.vcxproj", "{E45E7C6F-684B-4ED5-AD37-C577A674BA49}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE01FAE6-65EC-4FA5-83F1-339270CF0EA9} = {EE01FAE6-65EC-4FA5-83F1-339270CF0EA9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "odme_dll", "odme_dll\odme_dll.vcxproj", "{EE01FAE6-65EC-4FA5-83F1-339270CF0EA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E45E7C6F-684B-4ED5-AD37-C577A674BA49}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E45E7C6F-684B-4ED5-AD37-C577A674BA49}.Debug|Win32.Build.0 = Debug|Win32
+		{E45E7C6F-684B-4ED5-AD37-C577A674BA49}.Release|Win32.ActiveCfg = Release|Win32
+		{E45E7C6F-684B-4ED5-AD37-C577A674BA49}.Release|Win32.Build.0 = Release|Win32
+		{EE01FAE6-65EC-4FA5-83F1-339270CF0EA9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE01FAE6-65EC-4FA5-83F1-339270CF0EA9}.Debug|Win32.Build.0 = Debug|Win32
+		{EE01FAE6-65EC-4FA5-83F1-339270CF0EA9}.Release|Win32.ActiveCfg = Release|Win32
+		{EE01FAE6-65EC-4FA5-83F1-339270CF0EA9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
