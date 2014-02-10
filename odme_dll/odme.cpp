@@ -11,8 +11,16 @@
 #include <WinSock2.h>
 
 #include <Windows.h>
-#define ODME_DLL_API extern "C" __declspec(dllexport)
 
+// My sad attempt at making this cross platform one day...
+#undef ODME_DLL_API
+#if defined _WIN64 || defined _WIN32
+#define ODME_DLL_API extern "C" __declspec(dllexport)
+#elif defined __GNUC__
+#define ODME_DLL_API extern "C"
+#else
+#define ODME_DLL_API extern "C"
+#endif
 // The one and ONLY constructor
 odme::odme(std::string name, std::string ip, int port) : name(name)
 {

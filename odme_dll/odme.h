@@ -12,7 +12,11 @@
 #include <WinSock2.h>
 #include <Windows.h>
 
+#if defined _WIN64 || defined _WIN32
 #define ODME_DLL_API __declspec(dllexport)
+#else
+#define ODME_DLL_API   // As far as I know on g++ we only need to get Public in the definition.
+#endif
 
 class odme
 {
