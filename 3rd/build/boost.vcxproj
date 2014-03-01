@@ -59,6 +59,12 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>bootstrap &amp; b2 --stagedir=..\</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>builds jam and boost</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

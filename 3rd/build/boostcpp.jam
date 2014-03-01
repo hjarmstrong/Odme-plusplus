@@ -9,11 +9,19 @@
 #          http://www.boost.org/LICENSE_1_0.txt)
 
 import "class" : new ;
-
+import common ;
+import configure ;
 import build-system ;
-
+import generate ;
+import modules ;
+import option ;
+import os ;
+import package ;
+import path ;
+import project ;
 import regex ;
-
+import set ;
+import targets ;
 
 
 ##############################################################################
